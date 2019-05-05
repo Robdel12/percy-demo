@@ -13,10 +13,9 @@ script:
   - which node
   - which npm
   - nvm which 11.15.0
-  - nvm use node
   - which node
   - env
-  # - sudo ln -s /usr/local/bin/node /usr/bin/node
-  - nvm use node ; npm run percy-cypress-app:ci
+  - sudo ln -s /home/travis/.nvm/versions/node/v11.15.0/bin/node /usr/bin/node
+  - npm run percy-cypress-app:ci
   # to kill all background jobs (like "npm start")
   - kill $(jobs -p) || true

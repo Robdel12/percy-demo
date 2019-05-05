@@ -11,4 +11,9 @@ context("App", () => {
     // Generate image snapshot using Percy
     cy.percySnapshot();
   });
+
+  it('should fail', () => {
+    // ssh into the build...?
+    expect('true').to.equal('false');
+  });
 });
